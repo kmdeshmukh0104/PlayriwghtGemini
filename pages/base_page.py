@@ -43,4 +43,5 @@ class BasePage:
 
         :param selector: The selector of the element to click.
         """
+        self.page.wait_for_selector(selector)
         self.page.click(selector)
