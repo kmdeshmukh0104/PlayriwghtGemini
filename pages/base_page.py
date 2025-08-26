@@ -35,6 +35,7 @@ class BasePage:
         :param selector: The selector of the element to find.
         :return: The element.
         """
+        
         return self.page.query_selector(selector)
 
     def click_element(self, selector: str):
